@@ -273,6 +273,7 @@ static void DisplayTask(void *pvParameters)
   InitializeModeTimeouts();
   InitializeTimeFormat();
   InitializeDateFormat();
+  InitializeLanguage();
   AllocateDisplayTimers();
   SetupSplashScreenTimeout();
 

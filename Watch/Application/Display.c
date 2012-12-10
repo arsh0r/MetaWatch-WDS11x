@@ -143,19 +143,19 @@ static unsigned char nvLanguage;
 
 void InitializeTimeFormat(void)
 {
-  nvTimeFormat = TWELVE_HOUR;
+  nvTimeFormat = TWENTY_FOUR_HOUR;
   OsalNvItemInit(NVID_TIME_FORMAT, sizeof(nvTimeFormat), &nvTimeFormat);
 }
 
 void InitializeDateFormat(void)
 {
-  nvDateFormat = MONTH_FIRST;
+  nvDateFormat = DAY_FIRST;
   OsalNvItemInit(NVID_DATE_FORMAT, sizeof(nvDateFormat), &nvDateFormat);
 }
 
 void InitializeLanguage(void)
 {
-  nvLanguage = LANG_EN;
+  nvLanguage = LANG_DE;
   OsalNvItemInit(NVID_LANGUAGE, sizeof(nvLanguage), &nvLanguage);
 }
 
@@ -190,7 +190,7 @@ void ToggleLinkAlarmEnable(void)
 
 void InitializeLinkAlarmEnable(void)
 {
-  nvLinkAlarmEnable = 1;
+  nvLinkAlarmEnable = 0;
   OsalNvItemInit(NVID_LINK_ALARM_ENABLE, 
                  sizeof(nvLinkAlarmEnable), 
                  &nvLinkAlarmEnable);

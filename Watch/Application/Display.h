@@ -139,7 +139,7 @@ void InitializeTimeFormat(void);
 */
 void InitializeDateFormat(void);
 
-void InitaliazeLanguage(void);
+void InitializeLanguage(void);
 
 /*! \return Time Format TWELVE_HOUR = 0, TWENTY_FOUR_HOUR = 1 */
 unsigned char GetTimeFormat(void);
